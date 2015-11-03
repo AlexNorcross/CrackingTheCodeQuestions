@@ -15,6 +15,7 @@
 		BA1969721BE8347000AF373A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1969701BE8347000AF373A /* LaunchScreen.storyboard */; };
 		BA19697D1BE8347000AF373A /* CrackingTheCodeQuestionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA19697C1BE8347000AF373A /* CrackingTheCodeQuestionsTests.m */; };
 		BA1969881BE8347000AF373A /* CrackingTheCodeQuestionsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969871BE8347000AF373A /* CrackingTheCodeQuestionsUITests.m */; };
+		BA19699A1BE835CE00AF373A /* MyStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969991BE835CE00AF373A /* MyStrings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		BA1969831BE8347000AF373A /* CrackingTheCodeQuestionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrackingTheCodeQuestionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1969871BE8347000AF373A /* CrackingTheCodeQuestionsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrackingTheCodeQuestionsUITests.m; sourceTree = "<group>"; };
 		BA1969891BE8347000AF373A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA1969981BE835CE00AF373A /* MyStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStrings.h; sourceTree = "<group>"; };
+		BA1969991BE835CE00AF373A /* MyStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStrings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +104,11 @@
 		BA1969611BE8347000AF373A /* CrackingTheCodeQuestions */ = {
 			isa = PBXGroup;
 			children = (
+				BA1969971BE8355F00AF373A /* Models */,
+				BA1969961BE8355800AF373A /* Views */,
+				BA1969951BE8354800AF373A /* Controllers */,
 				BA1969651BE8347000AF373A /* AppDelegate.h */,
 				BA1969661BE8347000AF373A /* AppDelegate.m */,
-				BA1969681BE8347000AF373A /* ViewController.h */,
-				BA1969691BE8347000AF373A /* ViewController.m */,
-				BA19696B1BE8347000AF373A /* Main.storyboard */,
-				BA19696E1BE8347000AF373A /* Assets.xcassets */,
-				BA1969701BE8347000AF373A /* LaunchScreen.storyboard */,
 				BA1969731BE8347000AF373A /* Info.plist */,
 				BA1969621BE8347000AF373A /* Supporting Files */,
 			);
@@ -138,6 +139,34 @@
 				BA1969891BE8347000AF373A /* Info.plist */,
 			);
 			path = CrackingTheCodeQuestionsUITests;
+			sourceTree = "<group>";
+		};
+		BA1969951BE8354800AF373A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA1969681BE8347000AF373A /* ViewController.h */,
+				BA1969691BE8347000AF373A /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BA1969961BE8355800AF373A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA19696E1BE8347000AF373A /* Assets.xcassets */,
+				BA1969701BE8347000AF373A /* LaunchScreen.storyboard */,
+				BA19696B1BE8347000AF373A /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BA1969971BE8355F00AF373A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA1969981BE835CE00AF373A /* MyStrings.h */,
+				BA1969991BE835CE00AF373A /* MyStrings.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +301,7 @@
 			files = (
 				BA19696A1BE8347000AF373A /* ViewController.m in Sources */,
 				BA1969671BE8347000AF373A /* AppDelegate.m in Sources */,
+				BA19699A1BE835CE00AF373A /* MyStrings.m in Sources */,
 				BA1969641BE8347000AF373A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
