@@ -16,6 +16,8 @@
 		BA19697D1BE8347000AF373A /* CrackingTheCodeQuestionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA19697C1BE8347000AF373A /* CrackingTheCodeQuestionsTests.m */; };
 		BA1969881BE8347000AF373A /* CrackingTheCodeQuestionsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969871BE8347000AF373A /* CrackingTheCodeQuestionsUITests.m */; };
 		BA19699A1BE835CE00AF373A /* MyStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969991BE835CE00AF373A /* MyStrings.m */; };
+		BA19699D1BEAAC0200AF373A /* LinkedListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BA19699C1BEAAC0200AF373A /* LinkedListNode.m */; };
+		BA1969A11BEAAD4B00AF373A /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969A01BEAAD4B00AF373A /* LinkedList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		BA1969891BE8347000AF373A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA1969981BE835CE00AF373A /* MyStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStrings.h; sourceTree = "<group>"; };
 		BA1969991BE835CE00AF373A /* MyStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStrings.m; sourceTree = "<group>"; };
+		BA19699B1BEAAC0200AF373A /* LinkedListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinkedListNode.h; path = ../LinkedListNode.h; sourceTree = "<group>"; };
+		BA19699C1BEAAC0200AF373A /* LinkedListNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinkedListNode.m; path = ../LinkedListNode.m; sourceTree = "<group>"; };
+		BA19699F1BEAAD4B00AF373A /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		BA1969A01BEAAD4B00AF373A /* LinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,10 +169,22 @@
 		BA1969971BE8355F00AF373A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BA19699E1BEAAD3100AF373A /* LinkedList */,
 				BA1969981BE835CE00AF373A /* MyStrings.h */,
 				BA1969991BE835CE00AF373A /* MyStrings.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		BA19699E1BEAAD3100AF373A /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				BA19699F1BEAAD4B00AF373A /* LinkedList.h */,
+				BA1969A01BEAAD4B00AF373A /* LinkedList.m */,
+				BA19699B1BEAAC0200AF373A /* LinkedListNode.h */,
+				BA19699C1BEAAC0200AF373A /* LinkedListNode.m */,
+			);
+			name = LinkedList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,9 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1969A11BEAAD4B00AF373A /* LinkedList.m in Sources */,
 				BA19696A1BE8347000AF373A /* ViewController.m in Sources */,
 				BA1969671BE8347000AF373A /* AppDelegate.m in Sources */,
 				BA19699A1BE835CE00AF373A /* MyStrings.m in Sources */,
+				BA19699D1BEAAC0200AF373A /* LinkedListNode.m in Sources */,
 				BA1969641BE8347000AF373A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
