@@ -11,5 +11,6 @@
 @interface MyStrings : NSObject
 
 -(BOOL) stringHasUniqueCharacters: (NSString *) string;
+-(void) reverse: (NSString *) string;
 
 @end

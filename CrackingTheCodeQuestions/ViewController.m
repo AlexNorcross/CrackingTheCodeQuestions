@@ -19,8 +19,11 @@
   [super viewDidLoad];
   
   MyStrings *strings = [[MyStrings alloc] init];
-  NSLog(@"%@", [strings stringHasUniqueCharacters:@"hello"] ? @"yes" : @"no");
-  NSLog(@"%@", [strings stringHasUniqueCharacters:@"bye"] ? @"yes" : @"no");
+//  NSLog(@"%@", [strings stringHasUniqueCharacters:@"hello"] ? @"yes" : @"no");
+//  NSLog(@"%@", [strings stringHasUniqueCharacters:@"bye"] ? @"yes" : @"no");
+
+  [strings reverse:@"hello!"];
+  [strings reverse:@"bye"];
   
 }
 
