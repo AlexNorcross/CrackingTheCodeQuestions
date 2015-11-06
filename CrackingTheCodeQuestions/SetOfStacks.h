@@ -1,5 +1,5 @@
 //
-//  Stack.h
+//  SetOfStacks.h
 //  CrackingTheCodeQuestions
 //
 //  Created by Alexandra Norcross on 11/6/15.
@@ -8,15 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Stack : NSObject
+@interface SetOfStacks : NSObject
 
--(instancetype) init;
+-(instancetype) initWithStackMaxSize: (NSInteger) maxSize;
 
 -(void) push: (NSNumber *) data;
 -(void) pop;
 
--(NSUInteger) count;
--(NSNumber *) min;
 -(NSNumber *) peek;
 
 @end

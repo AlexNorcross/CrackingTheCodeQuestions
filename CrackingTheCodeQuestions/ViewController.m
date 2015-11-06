@@ -10,6 +10,7 @@
 #import "MyStrings.h"
 #import "LinkedList.h"
 #import "Stack.h"
+#import "SetOfStacks.h"
 
 @interface ViewController ()
 
@@ -25,18 +26,31 @@
 
 -(void) stacks {
   
-  Stack *stack = [[Stack alloc] init];
+  //Stack *stack = [[Stack alloc] init];
   
-  [stack push:[NSNumber numberWithInt:10]];
-  [stack push:[NSNumber numberWithInt:3]];
-  [stack push:[NSNumber numberWithInt:15]];
-  [stack push:[NSNumber numberWithInt:-1]];
+  //[stack push:[NSNumber numberWithInt:10]];
+  //[stack push:[NSNumber numberWithInt:3]];
+  //[stack push:[NSNumber numberWithInt:15]];
+  //[stack push:[NSNumber numberWithInt:-1]];
   
   //Question 3.2
-  NSLog(@"%@", [stack min]);
-  [stack pop];
-  NSLog(@"%@", [stack min]);
+  //NSLog(@"%@", [stack min]);
+  //[stack pop];
+  //NSLog(@"%@", [stack min]);
   
+  //Question 3.3
+  SetOfStacks *set = [[SetOfStacks alloc] initWithStackMaxSize:2];
+  [set push:[NSNumber numberWithInt:10]];
+  [set push:[NSNumber numberWithInt:3]];
+  NSLog(@"%@", [set peek]);
+  [set push:[NSNumber numberWithInt:15]];
+  NSLog(@"%@", [set peek]);
+  [set push:[NSNumber numberWithInt:-1]];
+  [set push:[NSNumber numberWithInt:20]];
+  [set pop];
+  NSLog(@"%@", [set peek]);
+  [set pop];
+  NSLog(@"%@", [set peek]);
 }
 
 -(void) linkedLists {
