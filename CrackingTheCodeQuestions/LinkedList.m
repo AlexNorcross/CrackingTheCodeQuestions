@@ -68,6 +68,36 @@
   }
 }
 
+-(void) getKthToLastElement: (NSInteger) k {
+  //where count is not tracked
+  
+  if (_root != nil) {
+    [self gotoNextNode: _root k: k];
+
+  //root does not exist
+  } else {
+    NSLog(@"list does not exist");
+  }
+}
+
+-(NSInteger) gotoNextNode: (LinkedListNode *) node k: (NSInteger) k {
+  
+  NSInteger tracker;
+  
+  if (node.next != nil) {
+    tracker = [self gotoNextNode: node.next k: k];
+    tracker++;
+  } else {
+    tracker = 0;
+  }
+  
+  if (tracker == k) {
+    NSLog(@"%ld from last element is %@", (long)k, node.data);
+  }
+  
+  return tracker;
+}
+
 -(void) printContents {
   
   LinkedListNode *node = _root;

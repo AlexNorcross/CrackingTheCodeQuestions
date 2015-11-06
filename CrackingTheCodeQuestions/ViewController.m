@@ -26,20 +26,23 @@
   
   //Question 2.1
   LinkedList *list = [[LinkedList alloc] initRootWithData: @"1"];
+  [list addNodeWithData: @"2"];
+  [list addNodeWithData: @"3"];
+//  [list addNodeWithData: @"1"];
+//  [list addNodeWithData: @"9"];
+//  [list addNodeWithData: @"1"];
+//  [list addNodeWithData: @"10"];
 
-  NSLog(@"%@", @"original");
-  [list addNodeWithData: @"5"];
-  [list addNodeWithData: @"10"];
-  [list addNodeWithData: @"1"];
-  [list addNodeWithData: @"9"];
-  [list addNodeWithData: @"1"];
-  [list addNodeWithData: @"10"];
-  [list printContents];
+  //NSLog(@"%@", @"original");
+  //[list printContents];
+  //NSLog(@"%@", @"duplicates removed");
+  //[list removeDuplicates];
+  //[list printContents];
   
-  NSLog(@"%@", @"duplicates removed");
-  [list removeDuplicates];
-  [list printContents];
-
+  [list getKthToLastElement:0];
+  [list getKthToLastElement:1];
+  [list getKthToLastElement:2];
+  [list getKthToLastElement:3];
 }
 
 -(void) strings {

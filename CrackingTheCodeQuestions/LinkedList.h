@@ -17,6 +17,7 @@
 -(void) addNodeWithData: (NSString *) data;
 
 -(void) removeDuplicates;
+-(void) getKthToLastElement: (NSInteger) k;
 
 -(void) printContents;
 
