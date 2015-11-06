@@ -18,6 +18,7 @@
 		BA19699A1BE835CE00AF373A /* MyStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969991BE835CE00AF373A /* MyStrings.m */; };
 		BA19699D1BEAAC0200AF373A /* LinkedListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BA19699C1BEAAC0200AF373A /* LinkedListNode.m */; };
 		BA1969A11BEAAD4B00AF373A /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969A01BEAAD4B00AF373A /* LinkedList.m */; };
+		BA1969A41BED145400AF373A /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969A31BED145400AF373A /* Stack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		BA19699C1BEAAC0200AF373A /* LinkedListNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinkedListNode.m; path = ../LinkedListNode.m; sourceTree = "<group>"; };
 		BA19699F1BEAAD4B00AF373A /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
 		BA1969A01BEAAD4B00AF373A /* LinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
+		BA1969A21BED145400AF373A /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		BA1969A31BED145400AF373A /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 				BA19699E1BEAAD3100AF373A /* LinkedList */,
 				BA1969981BE835CE00AF373A /* MyStrings.h */,
 				BA1969991BE835CE00AF373A /* MyStrings.m */,
+				BA1969A21BED145400AF373A /* Stack.h */,
+				BA1969A31BED145400AF373A /* Stack.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA1969A11BEAAD4B00AF373A /* LinkedList.m in Sources */,
+				BA1969A41BED145400AF373A /* Stack.m in Sources */,
 				BA19696A1BE8347000AF373A /* ViewController.m in Sources */,
 				BA1969671BE8347000AF373A /* AppDelegate.m in Sources */,
 				BA19699A1BE835CE00AF373A /* MyStrings.m in Sources */,
