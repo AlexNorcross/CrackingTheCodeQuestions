@@ -32,23 +32,26 @@
 }
 
 -(void) push: (NSNumber *) data {
-
-  //minimum value
-  NSNumber * currentMinValue = [self peek];
-  if (currentMinValue != nil) {
+  
+  if (_stackArray != nil) {
     
-    if ([data doubleValue] < [currentMinValue doubleValue]) {
-      [_minValue addObject: data];
+    //minimum value
+    NSNumber * currentMinValue = [self peek];
+    if (currentMinValue != nil) {
+      
+      if ([data doubleValue] < [currentMinValue doubleValue]) {
+        [_minValue addObject: data];
+      } else {
+        [_minValue addObject: currentMinValue];
+      }
+      
     } else {
-      [_minValue addObject: currentMinValue];
+      [_minValue addObject: data];
     }
     
-  } else {
-    [_minValue addObject: data];
+    //push
+    [_stackArray addObject:data];
   }
-  
-  //push
-  [_stackArray addObject:data];
 }
 
 -(void) pop {

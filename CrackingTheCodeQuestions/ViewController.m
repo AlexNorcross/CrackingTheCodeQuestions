@@ -11,6 +11,7 @@
 #import "LinkedList.h"
 #import "Stack.h"
 #import "SetOfStacks.h"
+#import "Queue.h"
 
 @interface ViewController ()
 
@@ -21,7 +22,20 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  [self stacks];
+  [self queues];
+}
+
+-(void) queues {
+
+  Queue *queue = [[Queue alloc] init];
+  [queue enqueue:[NSNumber numberWithInt:10]];
+  [queue enqueue:[NSNumber numberWithInt:9]];
+  [queue enqueue:[NSNumber numberWithInt:8]];
+  NSLog(@"%@", [queue front]);
+  NSLog(@"count: %ld", [queue count]);
+  [queue dequeue];
+  NSLog(@"%@", [queue front]);
+  NSLog(@"count: %ld", [queue count]);
 }
 
 -(void) stacks {
