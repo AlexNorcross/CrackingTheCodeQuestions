@@ -12,6 +12,7 @@
 #import "Stack.h"
 #import "SetOfStacks.h"
 #import "Queue.h"
+#import "BinaryTree.h"
 
 @interface ViewController ()
 
@@ -22,7 +23,25 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  [self queues];
+  [self trees];
+}
+
+-(void) trees {
+  
+  BinaryTree *tree = [[BinaryTree alloc] initWithRootValue:[NSNumber numberWithInt:10]];
+  BinaryTreeNode *left = [tree.root addNodeWithValueLeft:[NSNumber numberWithInt:3]];
+  BinaryTreeNode *right = [tree.root addNodeWithValueRight:[NSNumber numberWithInt:7]];
+  
+  BinaryTreeNode *left1 = [left addNodeWithValueLeft:[NSNumber numberWithInt:2]];
+  BinaryTreeNode *right1 = [left addNodeWithValueRight:[NSNumber numberWithInt:4]];
+//
+  BinaryTreeNode *left2 = [right addNodeWithValueLeft:[NSNumber numberWithInt:6]];
+  BinaryTreeNode *right2 = [right addNodeWithValueRight:[NSNumber numberWithInt:9]];
+//
+  BinaryTreeNode *left3 = [left1 addNodeWithValueLeft:[NSNumber numberWithInt:1]];
+  BinaryTreeNode *right3 = [left1 addNodeWithValueRight:[NSNumber numberWithInt:3]];
+  
+  NSLog(@"%@", [tree isBalanced] ? @"Yes" : @"No");
 }
 
 -(void) queues {

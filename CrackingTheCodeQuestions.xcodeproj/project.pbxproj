@@ -21,6 +21,8 @@
 		BA1969A41BED145400AF373A /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969A31BED145400AF373A /* Stack.m */; };
 		BA1969A81BED367B00AF373A /* SetOfStacks.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969A71BED367B00AF373A /* SetOfStacks.m */; };
 		BA1969AB1BED440400AF373A /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969AA1BED440400AF373A /* Queue.m */; };
+		BA1969B21BED586800AF373A /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969B11BED586800AF373A /* BinaryTreeNode.m */; };
+		BA1969B61BED594000AF373A /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969B51BED594000AF373A /* BinaryTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,10 @@
 		BA1969A71BED367B00AF373A /* SetOfStacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetOfStacks.m; sourceTree = "<group>"; };
 		BA1969A91BED440400AF373A /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		BA1969AA1BED440400AF373A /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		BA1969B01BED586800AF373A /* BinaryTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
+		BA1969B11BED586800AF373A /* BinaryTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
+		BA1969B41BED594000AF373A /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
+		BA1969B51BED594000AF373A /* BinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,12 +184,12 @@
 		BA1969971BE8355F00AF373A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BA1969B31BED586F00AF373A /* Tree */,
+				BA1969AC1BED4F8B00AF373A /* Queue */,
 				BA1969A51BED365B00AF373A /* Stack */,
 				BA19699E1BEAAD3100AF373A /* LinkedList */,
 				BA1969981BE835CE00AF373A /* MyStrings.h */,
 				BA1969991BE835CE00AF373A /* MyStrings.m */,
-				BA1969A91BED440400AF373A /* Queue.h */,
-				BA1969AA1BED440400AF373A /* Queue.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -208,6 +214,26 @@
 				BA1969A71BED367B00AF373A /* SetOfStacks.m */,
 			);
 			name = Stack;
+			sourceTree = "<group>";
+		};
+		BA1969AC1BED4F8B00AF373A /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				BA1969A91BED440400AF373A /* Queue.h */,
+				BA1969AA1BED440400AF373A /* Queue.m */,
+			);
+			name = Queue;
+			sourceTree = "<group>";
+		};
+		BA1969B31BED586F00AF373A /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				BA1969B41BED594000AF373A /* BinaryTree.h */,
+				BA1969B51BED594000AF373A /* BinaryTree.m */,
+				BA1969B01BED586800AF373A /* BinaryTreeNode.h */,
+				BA1969B11BED586800AF373A /* BinaryTreeNode.m */,
+			);
+			name = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1969B61BED594000AF373A /* BinaryTree.m in Sources */,
 				BA1969A11BEAAD4B00AF373A /* LinkedList.m in Sources */,
 				BA1969A41BED145400AF373A /* Stack.m in Sources */,
 				BA1969A81BED367B00AF373A /* SetOfStacks.m in Sources */,
@@ -348,6 +375,7 @@
 				BA1969671BE8347000AF373A /* AppDelegate.m in Sources */,
 				BA19699A1BE835CE00AF373A /* MyStrings.m in Sources */,
 				BA19699D1BEAAC0200AF373A /* LinkedListNode.m in Sources */,
+				BA1969B21BED586800AF373A /* BinaryTreeNode.m in Sources */,
 				BA1969641BE8347000AF373A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
