@@ -13,6 +13,7 @@
 #import "SetOfStacks.h"
 #import "Queue.h"
 #import "BinaryTree.h"
+#import "Sorting.h"
 
 @interface ViewController ()
 
@@ -23,25 +24,43 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  [self trees];
+  [self sort];
+}
+
+-(void) sort {
+  
+  NSMutableArray *toSort = [[NSMutableArray alloc] init];
+  [toSort addObject:[NSNumber numberWithInt:10]];
+  [toSort addObject:[NSNumber numberWithInt:1]];
+  [toSort addObject:[NSNumber numberWithInt:-1]];
+  [toSort addObject:[NSNumber numberWithInt:5]];
+  [toSort addObject:[NSNumber numberWithInt:11]];
+  [toSort addObject:[NSNumber numberWithInt:8]];
+  
+  //NSMutableArray *sorted = [Sorting quickSort:toSort indexLow:0 indexHigh:[toSort count] - 1];
+  NSMutableArray *sorted = [Sorting mergeSort:toSort];
+  for (NSNumber *element in sorted) {
+    NSLog(@"%@", element);
+  }
+  
 }
 
 -(void) trees {
   
-  BinaryTree *tree = [[BinaryTree alloc] initWithRootValue:[NSNumber numberWithInt:10]];
-  BinaryTreeNode *left = [tree.root addNodeWithValueLeft:[NSNumber numberWithInt:3]];
-  BinaryTreeNode *right = [tree.root addNodeWithValueRight:[NSNumber numberWithInt:7]];
-  
-  BinaryTreeNode *left1 = [left addNodeWithValueLeft:[NSNumber numberWithInt:2]];
-  BinaryTreeNode *right1 = [left addNodeWithValueRight:[NSNumber numberWithInt:4]];
+//  BinaryTree *tree = [[BinaryTree alloc] initWithRootValue:[NSNumber numberWithInt:10]];
+//  BinaryTreeNode *left = [tree.root addNodeWithValueLeft:[NSNumber numberWithInt:3]];
+//  BinaryTreeNode *right = [tree.root addNodeWithValueRight:[NSNumber numberWithInt:7]];
+//  
+//  BinaryTreeNode *left1 = [left addNodeWithValueLeft:[NSNumber numberWithInt:2]];
+//  BinaryTreeNode *right1 = [left addNodeWithValueRight:[NSNumber numberWithInt:4]];
 //
-  BinaryTreeNode *left2 = [right addNodeWithValueLeft:[NSNumber numberWithInt:6]];
-  BinaryTreeNode *right2 = [right addNodeWithValueRight:[NSNumber numberWithInt:9]];
+//  BinaryTreeNode *left2 = [right addNodeWithValueLeft:[NSNumber numberWithInt:6]];
+//  BinaryTreeNode *right2 = [right addNodeWithValueRight:[NSNumber numberWithInt:9]];
 //
-  BinaryTreeNode *left3 = [left1 addNodeWithValueLeft:[NSNumber numberWithInt:1]];
-  BinaryTreeNode *right3 = [left1 addNodeWithValueRight:[NSNumber numberWithInt:3]];
-  
-  NSLog(@"%@", [tree isBalanced] ? @"Yes" : @"No");
+//  BinaryTreeNode *left3 = [left1 addNodeWithValueLeft:[NSNumber numberWithInt:1]];
+//  BinaryTreeNode *right3 = [left1 addNodeWithValueRight:[NSNumber numberWithInt:3]];
+//  
+//  NSLog(@"%@", [tree isBalanced] ? @"Yes" : @"No");
 }
 
 -(void) queues {
