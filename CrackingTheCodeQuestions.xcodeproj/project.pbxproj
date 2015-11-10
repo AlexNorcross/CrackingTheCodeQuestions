@@ -16,7 +16,6 @@
 		BA19697D1BE8347000AF373A /* CrackingTheCodeQuestionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA19697C1BE8347000AF373A /* CrackingTheCodeQuestionsTests.m */; };
 		BA1969881BE8347000AF373A /* CrackingTheCodeQuestionsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969871BE8347000AF373A /* CrackingTheCodeQuestionsUITests.m */; };
 		BA19699A1BE835CE00AF373A /* MyStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969991BE835CE00AF373A /* MyStrings.m */; };
-		BA19699D1BEAAC0200AF373A /* LinkedListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BA19699C1BEAAC0200AF373A /* LinkedListNode.m */; };
 		BA1969A11BEAAD4B00AF373A /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969A01BEAAD4B00AF373A /* LinkedList.m */; };
 		BA1969A41BED145400AF373A /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969A31BED145400AF373A /* Stack.m */; };
 		BA1969A81BED367B00AF373A /* SetOfStacks.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969A71BED367B00AF373A /* SetOfStacks.m */; };
@@ -26,6 +25,7 @@
 		BA1969B91BF1344900AF373A /* Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969B81BF1344900AF373A /* Sorting.m */; };
 		BA1969BC1BF1345900AF373A /* GraphNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969BB1BF1345900AF373A /* GraphNode.m */; };
 		BA1969BF1BF1346800AF373A /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969BE1BF1346800AF373A /* Graph.m */; };
+		BA1969C31BF1705B00AF373A /* LinkedListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1969C21BF1705B00AF373A /* LinkedListNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +64,6 @@
 		BA1969891BE8347000AF373A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA1969981BE835CE00AF373A /* MyStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStrings.h; sourceTree = "<group>"; };
 		BA1969991BE835CE00AF373A /* MyStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStrings.m; sourceTree = "<group>"; };
-		BA19699B1BEAAC0200AF373A /* LinkedListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinkedListNode.h; path = ../LinkedListNode.h; sourceTree = "<group>"; };
-		BA19699C1BEAAC0200AF373A /* LinkedListNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinkedListNode.m; path = ../LinkedListNode.m; sourceTree = "<group>"; };
 		BA19699F1BEAAD4B00AF373A /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
 		BA1969A01BEAAD4B00AF373A /* LinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
 		BA1969A21BED145400AF373A /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
@@ -84,6 +82,8 @@
 		BA1969BB1BF1345900AF373A /* GraphNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphNode.m; sourceTree = "<group>"; };
 		BA1969BD1BF1346800AF373A /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
 		BA1969BE1BF1346800AF373A /* Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graph.m; sourceTree = "<group>"; };
+		BA1969C11BF1705B00AF373A /* LinkedListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedListNode.h; sourceTree = "<group>"; };
+		BA1969C21BF1705B00AF373A /* LinkedListNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedListNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,8 +211,8 @@
 			children = (
 				BA19699F1BEAAD4B00AF373A /* LinkedList.h */,
 				BA1969A01BEAAD4B00AF373A /* LinkedList.m */,
-				BA19699B1BEAAC0200AF373A /* LinkedListNode.h */,
-				BA19699C1BEAAC0200AF373A /* LinkedListNode.m */,
+				BA1969C11BF1705B00AF373A /* LinkedListNode.h */,
+				BA1969C21BF1705B00AF373A /* LinkedListNode.m */,
 			);
 			name = LinkedList;
 			sourceTree = "<group>";
@@ -397,9 +397,9 @@
 				BA1969A81BED367B00AF373A /* SetOfStacks.m in Sources */,
 				BA1969AB1BED440400AF373A /* Queue.m in Sources */,
 				BA19696A1BE8347000AF373A /* ViewController.m in Sources */,
+				BA1969C31BF1705B00AF373A /* LinkedListNode.m in Sources */,
 				BA1969671BE8347000AF373A /* AppDelegate.m in Sources */,
 				BA19699A1BE835CE00AF373A /* MyStrings.m in Sources */,
-				BA19699D1BEAAC0200AF373A /* LinkedListNode.m in Sources */,
 				BA1969B21BED586800AF373A /* BinaryTreeNode.m in Sources */,
 				BA1969BF1BF1346800AF373A /* Graph.m in Sources */,
 				BA1969641BE8347000AF373A /* main.m in Sources */,
