@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GraphNode.h"
 
 @interface Graph : NSObject
+
+@property (strong,nonatomic) GraphNode *root;
+
+-(instancetype) initWithRootValue: (id) data;
+
+-(BOOL) routeExistsFrom: (GraphNode *) node1 toNode: (GraphNode *) node2;
 
 @end

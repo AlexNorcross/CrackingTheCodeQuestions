@@ -10,4 +10,12 @@
 
 @interface GraphNode : NSObject
 
+@property id data;
+@property BOOL visited;
+@property (strong,nonatomic) NSMutableArray *adjacents;
+
+-(instancetype) initWithValue: (id) data;
+
+-(GraphNode *) addAdjacentWithValue: (id) data;
+
 @end

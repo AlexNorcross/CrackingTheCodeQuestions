@@ -23,7 +23,7 @@
   return self;
 }
 
--(void) enqueue: (NSNumber *) data {
+-(void) enqueue: (id) data {
   
   if (_queueArray != nil) {
     [_queueArray addObject:data];
@@ -47,9 +47,9 @@
   }
 }
 
--(NSNumber *) front {
+-(id) front {
   
-  NSNumber *returnValue;
+  id returnValue;
   
   if ([self count] > 0) {
     returnValue = _queueArray[0];

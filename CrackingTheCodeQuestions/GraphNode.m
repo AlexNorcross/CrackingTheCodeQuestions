@@ -10,4 +10,23 @@
 
 @implementation GraphNode
 
+-(instancetype) initWithValue: (id) data {
+  if (self == [super init]) {
+    _data = data;
+    _visited = false;
+    
+    _adjacents = [[NSMutableArray alloc] init];
+  }
+  
+  return self;
+}
+
+-(GraphNode *) addAdjacentWithValue: (id) data {
+  
+  GraphNode *new = [[GraphNode alloc] initWithValue:data];
+  [_adjacents addObject: new];
+  
+  return new;
+}
+
 @end

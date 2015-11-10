@@ -12,10 +12,10 @@
 
 -(instancetype) init;
 
--(void) enqueue: (NSNumber *) data;
+-(void) enqueue: (id) data;
 -(void) dequeue;
 
 -(NSUInteger) count;
--(NSNumber *) front;
+-(id) front;
 
 @end

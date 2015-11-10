@@ -14,6 +14,7 @@
 #import "Queue.h"
 #import "BinaryTree.h"
 #import "Sorting.h"
+#import "Graph.h"
 
 @interface ViewController ()
 
@@ -24,7 +25,21 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  [self sort];
+  [self graphs];
+}
+
+-(void) graphs {
+  
+  Graph *graph = [[Graph alloc] initWithRootValue:@"A"];
+  
+  GraphNode *root = graph.root;
+  GraphNode *node1 = [root addAdjacentWithValue:@"B"];
+  GraphNode *node2 = [root addAdjacentWithValue:@"C"];
+  
+  GraphNode *node3 = [node1 addAdjacentWithValue:@"D"];
+  GraphNode *node4 = [node1 addAdjacentWithValue:@"E"];
+  
+  NSLog(@"%s", ([graph routeExistsFrom:root toNode:node2]) ? "Yes" : "No");
 }
 
 -(void) sort {
