@@ -16,5 +16,6 @@
 -(instancetype) initWithRootValue: (id) data;
 
 -(BOOL) routeExistsFrom: (GraphNode *) node1 toNode: (GraphNode *) node2;
+-(BOOL) routeExistsRecursiveFrom: (GraphNode *) node1 toNode: (GraphNode *) node2;
 
 @end

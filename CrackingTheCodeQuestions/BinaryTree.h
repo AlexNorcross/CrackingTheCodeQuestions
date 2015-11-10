@@ -14,6 +14,7 @@
 @property (strong,nonatomic) BinaryTreeNode *root;
 
 -(instancetype) initWithRootValue: (NSNumber *) data;
+-(instancetype) initBSTWithMinimalHeight: (NSArray *) values;
 
 -(BOOL) isBalanced;
 

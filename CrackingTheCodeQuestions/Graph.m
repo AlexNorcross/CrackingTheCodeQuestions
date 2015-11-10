@@ -21,6 +21,8 @@
 
 -(BOOL) routeExistsFrom: (GraphNode *) node1 toNode: (GraphNode *) node2 {
   
+  if (node1 == node2) return true;
+  
   Queue *queue = [[Queue alloc] init];
   
   node1.visited = true;
@@ -32,11 +34,35 @@
     [queue dequeue];
     
     for (GraphNode *adjacent in node.adjacents) {
-      if (adjacent.data == node2.data) {
+      if (adjacent.visited == false) {
+        if (adjacent == node2) {
+          return true;
+        } else {
+          adjacent.visited = true;
+          [queue enqueue: adjacent];
+        }
+      }
+    }
+  }
+  
+  return false;
+}
+
+-(BOOL) routeExistsRecursiveFrom: (GraphNode *) node1 toNode: (GraphNode *) node2 {
+  
+  if (node1 == node2) {
+    return true;
+  }
+  
+  node1.visited = true;
+  
+  for (GraphNode *adjacent in node1.adjacents) {
+    if (adjacent.visited == false) {
+      if (adjacent == node2) {
         return true;
       } else {
         adjacent.visited = true;
-        [queue enqueue: adjacent];
+        [self routeExistsRecursiveFrom:adjacent toNode:node2];
       }
     }
   }

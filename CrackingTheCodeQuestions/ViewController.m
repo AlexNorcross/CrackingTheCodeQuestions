@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  [self graphs];
+  [self trees];
 }
 
 -(void) graphs {
@@ -39,7 +39,10 @@
   GraphNode *node3 = [node1 addAdjacentWithValue:@"D"];
   GraphNode *node4 = [node1 addAdjacentWithValue:@"E"];
   
+  //Question 4.2
   NSLog(@"%s", ([graph routeExistsFrom:root toNode:node2]) ? "Yes" : "No");
+  NSLog(@"%s", ([graph routeExistsFrom:node2 toNode:node2]) ? "Yes" : "No");
+  NSLog(@"%s", ([graph routeExistsFrom:node2 toNode:node3]) ? "Yes" : "No");
 }
 
 -(void) sort {
@@ -62,20 +65,26 @@
 
 -(void) trees {
   
-//  BinaryTree *tree = [[BinaryTree alloc] initWithRootValue:[NSNumber numberWithInt:10]];
-//  BinaryTreeNode *left = [tree.root addNodeWithValueLeft:[NSNumber numberWithInt:3]];
-//  BinaryTreeNode *right = [tree.root addNodeWithValueRight:[NSNumber numberWithInt:7]];
-//  
-//  BinaryTreeNode *left1 = [left addNodeWithValueLeft:[NSNumber numberWithInt:2]];
-//  BinaryTreeNode *right1 = [left addNodeWithValueRight:[NSNumber numberWithInt:4]];
-//
-//  BinaryTreeNode *left2 = [right addNodeWithValueLeft:[NSNumber numberWithInt:6]];
-//  BinaryTreeNode *right2 = [right addNodeWithValueRight:[NSNumber numberWithInt:9]];
-//
-//  BinaryTreeNode *left3 = [left1 addNodeWithValueLeft:[NSNumber numberWithInt:1]];
-//  BinaryTreeNode *right3 = [left1 addNodeWithValueRight:[NSNumber numberWithInt:3]];
-//  
-//  NSLog(@"%@", [tree isBalanced] ? @"Yes" : @"No");
+  //BinaryTree *tree = [[BinaryTree alloc] initWithRootValue:[NSNumber numberWithInt:10]];
+  //BinaryTreeNode *left = [tree.root addNodeWithValueLeft:[NSNumber numberWithInt:3]];
+  //BinaryTreeNode *right = [tree.root addNodeWithValueRight:[NSNumber numberWithInt:7]];
+  //  
+  //BinaryTreeNode *left1 = [left addNodeWithValueLeft:[NSNumber numberWithInt:2]];
+  //BinaryTreeNode *right1 = [left addNodeWithValueRight:[NSNumber numberWithInt:4]];
+  //
+  //BinaryTreeNode *left2 = [right addNodeWithValueLeft:[NSNumber numberWithInt:6]];
+  //BinaryTreeNode *right2 = [right addNodeWithValueRight:[NSNumber numberWithInt:9]];
+  //
+  //BinaryTreeNode *left3 = [left1 addNodeWithValueLeft:[NSNumber numberWithInt:1]];
+  //BinaryTreeNode *right3 = [left1 addNodeWithValueRight:[NSNumber numberWithInt:3]];
+
+  //Question 4.1
+  //NSLog(@"%@", [tree isBalanced] ? @"Yes" : @"No");
+
+  //Question 4.3: create binary tree, minimal height
+  NSArray *treeFrom = [[NSArray alloc] initWithObjects:[NSNumber numberWithInt:1],[NSNumber numberWithInt:3],[NSNumber numberWithInt:5],[NSNumber numberWithInt:6],[NSNumber numberWithInt:8],[NSNumber numberWithInt:10],nil];
+  BinaryTree *tree = [[BinaryTree alloc] initBSTWithMinimalHeight:treeFrom];
+
 }
 
 -(void) queues {
